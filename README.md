@@ -26,7 +26,7 @@ Este es un proyecto web desarrollado en Laravel que permite la comunción con al
    ```bash
       cp .env.example .env
     ```
-  O sólo renombrar archivo "env" a ".env"
+
 4. **Generar clave de aplicación**
    ```bash
       php artisan key:generate

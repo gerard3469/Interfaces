@@ -67,7 +67,7 @@ Este es un proyecto web desarrollado en Laravel que permite la comunción con al
     "password": "aAa12345"
 }
 ```
-### **3. Guardar pŕoductos**
+### **3. Guardar productos**
 
 - **Método**: `POST`
 - **URL**: `/api/setProduct`

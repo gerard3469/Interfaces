@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWarehosesTable extends Migration
+class CreateWarehousesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class CreateWarehosesTable extends Migration
      */
     public function up()
     {
-        Schema::create('warehoses', function (Blueprint $table) {
+        Schema::create('warehouses', function (Blueprint $table) {
             $table->id();
+            $table->string('warehouse');
+            $table->string('key');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ class CreateWarehosesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('warehoses');
+        Schema::dropIfExists('warehouses');
     }
 }

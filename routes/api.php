@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\api\AuthController;
-use App\Http\Controllers\api\TransferController;
+use App\Http\Controllers\api\ProductController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,6 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/guardar-datos', [TransferController::class, 'ejemplo']);
+    Route::post('/setProduct', [ProductController::class, 'store']);
 });
 //Route::get('/guardar-datos', [TransferController::class, 'ejemplo']);
